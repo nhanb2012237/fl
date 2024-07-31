@@ -1,0 +1,46 @@
+.grass-container {
+    position: absolute;
+    bottom: 12vmin;
+    left: -7vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 20;
+    transform-origin: bottom center;
+    transform: rotate(-48deg) rotateY(40deg);
+  }
+  
+  .grass--1 {
+    animation: moving-grass 2s linear infinite;
+  }
+  
+  .grass--top {
+    width: 7vmin;
+    height: 10vmin;
+    border-top-right-radius: 100%;
+    border-right: 1.5vmin solid #159faa;
+    transform-origin: bottom center;
+    transform: rotate(-2deg);
+  }
+  
+  .grass--bottom {
+    margin-top: -2px;
+    width: 1.5vmin;
+    height: 25vmin;
+    background-image: linear-gradient(to top, transparent, #159faa);
+  }
+  
+  .grass__leaf {
+    --size: 10vmin;
+    position: absolute;
+    width: calc(var(--size) * 2.1);
+    height: var(--size);
+    border-top-left-radius: var(--size);
+    border-top-right-radius: var(--size);
+    background-image: linear-gradient(to top, transparent, transparent 30%, #159faa);
+    z-index: 100;
+    animation: growing-grass 2s linear infinite;
+  }
+  
+  /* Add other grass leaf styles similarly */
+  
